@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-image: url("../images/Sea1.jpg");
 }
 .header {
   background-image: url("../images/Sea2.jpg");
@@ -118,9 +119,9 @@ body {
 .container-fluid>.row:nth-child(7) {
   background-color: whitesmoke;
 }
-.container-fluid>.row:nth-child(8) {
+/*.container-fluid>.row:nth-child(8) {
   display: none;
-}
+}*/
 
 .container-fluid>.row:nth-child(4) p {
   font-family: Arial, sans-serif !important;

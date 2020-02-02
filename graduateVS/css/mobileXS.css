@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-image: url("../images/Sea1.jpg");
   }
   .header {
     background-image: url("../images/Sea2.jpg");
@@ -29,7 +30,7 @@ body {
     position: absolute;
     top: 10em;
     left: 5%;
-    width: 52%;
+    width: 50%;
   
   }
   
@@ -77,8 +78,8 @@ body {
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7);
     cursor: pointer;
     font-family: Arial, sans-serif;
-    font-weight: middle;
-    font-size: 1em;
+    font-weight: bold;
+    font-size: 0.9em;
     text-decoration: none!important;
   }
   
@@ -117,9 +118,9 @@ body {
   .container-fluid>.row:nth-child(7) {
     background-color: whitesmoke;
   }
-  .container-fluid>.row:nth-child(8) {
+  /*.container-fluid>.row:nth-child(8) {
     display: none;
-  }
+  }*/
   
   .container-fluid>.row:nth-child(4) p {
     font-family: Arial, sans-serif !important;
