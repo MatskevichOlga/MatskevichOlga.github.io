@@ -92,11 +92,7 @@ body {
   color: inherit;
 }
 
-.navbar {
-  width: 100%;
-  background: gold;
 
-}
 .container-fluid>.row:nth-child(4) p {
   margin: 3em auto 0;
   color: rgb(19, 19, 139);
@@ -238,6 +234,7 @@ h3 {
 .navbar {
   width: calc(100 - 16px);
   background: gold;
+  font-weight: bold;
 }
 .navbar-container, .bg-light {
   background: gold!important;
@@ -251,10 +248,5 @@ background-color: gold!important;
 .navbar-brand,  .nav-link, .dropdown-item {
 color: rgb(19, 19, 139)!important;
 font-family: Arial, sans-serif !important;
-
-
 }
-.navbar-brand {
-font-weight: bold;
 
-}
