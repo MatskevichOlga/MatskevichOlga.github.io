@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
     margin: 0;
     background-image: url("../images/Sea1.jpg");
@@ -14,6 +16,8 @@ body {
   }
   
   .Logo a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     text-decoration: none!important;
     font-family: 'Pacifico', cursive!important;
@@ -26,12 +30,13 @@ body {
   }
   
   .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    position: absolute;
-    top: 10em;
+    position: relative;
     left: 5%;
     width: 50%;
-  
+    margin: 3em auto 0;
   }
   
   .socials>.twitter,
@@ -42,7 +47,8 @@ body {
     width: 24px;
     height: 24px;
     padding: 0;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     line-height: 1em;
   }
@@ -67,13 +73,14 @@ body {
     background: url("../images/social.png") -96px 0 no-repeat
   }
   
-  .contacts {
-    display: block;
-    text-align: end;
-    width: calc(50% - 16px);
-    position: absolute;
-    right: 2.5em;
-    top: 9em;
+  
+   .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    width: calc(40% - 16px);
+    margin: 4em auto 4em;
     color: gold;
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7);
     cursor: pointer;
@@ -87,7 +94,7 @@ body {
     text-decoration: none!important;
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7) !important;
     font-family: Arial, sans-serif !important;
-    font-weight: middle;
+    font-weight: bold !important;
     color: inherit;
   }
   
@@ -118,9 +125,7 @@ body {
   .container-fluid>.row:nth-child(7) {
     background-color: whitesmoke;
   }
-  /*.container-fluid>.row:nth-child(8) {
-    display: none;
-  }*/
+
   
   .container-fluid>.row:nth-child(4) p {
     font-family: Arial, sans-serif !important;
@@ -136,15 +141,18 @@ body {
   .container-fluid>.row:nth-child(7) p {
     margin: 2em auto 0;
     color: rgb(19, 19, 139);
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .container-fluid>.row:nth-child(7) p~p {
     margin: auto;
-    font-size: 1.2em;
+    font-size: 1em;
     opacity: 0.8;
   }
   .container-fluid>.row:nth-child(7) p:first-child {
     font-weight: bold;
+  }
+  .container-fluid>.row:nth-child(7) {
+      max-height: 270px;
   }
   
   .card {
@@ -153,10 +161,17 @@ body {
   
   .vvod {
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
+  .aftervvod {
+height: 3em;
+background: whitesmoke;
+
+}
   
   .open-button {
+    position: relative;
     background-color: #2196F3;
     color: white;
     font-size: 15px;
@@ -164,10 +179,24 @@ body {
     padding: 16px 20px;
     border: none;
     cursor: pointer;
+  /* border-radius: 8px;*/
     opacity: 0.8;
-    width: 70%;
-    margin: 6em auto;
+    width: 60%;
+    margin: 2em auto 3em;
+    animation: box 1.5s ease-in-out infinite;
+    -webkit-animation: box 1.5s ease-in-out infinite;
   }
+  @-webkit-keyframes box {
+  0% { width: 60%; padding: 16px 20px; background: #2196F3;}
+  50% {width: 70%; padding: 20px 24px; background: blue;}
+  100%  { width: 60%; padding: 16px 20px; background: #2196F3; }
+ }
+  @keyframes box {
+  0% { width: 60%; padding: 16px 20px; background: #2196F3;}
+  50% {width: 70%; padding: 20px 24px; background: blue;}
+  100%  { width: 60%; padding: 16px 20px; background: #2196F3; }
+ }
+
   
   .form-popup {
     display: none;
@@ -180,8 +209,8 @@ body {
   }
   
   .form-container {
-    max-width: 300px;
-    padding: 10px;
+    width: 100%;
+   padding: 10px;
     background-color: white;
   
   }
@@ -199,18 +228,19 @@ body {
     outline: none;
   }
   
-  .form-container .btn {
-    background-color: #1976D2;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 0.8;
-    font-size: 15px;
-    font-weight: bold;
-  }
+.form-container .btn {
+  background-color: #1976D2;
+  color: white;
+  padding: 16px 20px;
+ border: none;
+ /*border-radius: 8px;*/
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: bold;
+}
   
   .form-container .cancel {
     background-color: #448AFF;
@@ -221,7 +251,7 @@ body {
     opacity: 1;
   }
   
-  .container-fluid>.row:nth-child(8) {
+  .container-fluid>.row:nth-child(9) {
     min-height: 2em;
   }
   .container-fluid>.row:last-child {
@@ -231,6 +261,8 @@ body {
     margin: 0;
   }
   .socialsF {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     position: relative;
@@ -243,7 +275,8 @@ body {
     width: 24px;
     height: 24px;
     padding: 0;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     line-height: 20px;
   }
@@ -253,7 +286,7 @@ body {
   .container-fluid>.row:last-child p {
       color: white;
       line-height: 1em;
-      font-weight: bold;
+      font-weight: middle;
       font-size: 1em;
   }
   .container-fluid>.row:nth-child(6) {
@@ -280,12 +313,21 @@ body {
   background-color: gold!important;
 }
 .navbar-brand,  .nav-link, .dropdown-item {
-  color: rgb(19, 19, 139)!important;
+  color:  rgb(0, 123, 255)!important;
   font-family: Arial, sans-serif !important;
 
 
 }
-.navbar-brand {
-  font-weight: bold;
-
+.nav-item {
+    opacity: 0.7;
 }
+/*.navbar-brand {
+font-weight: bold;
+}*/
+.nav-item:hover {
+    opacity: 1!important;
+}
+ .cena {
+     color: red;
+     font-weight: bold;
+ }

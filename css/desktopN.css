@@ -1,10 +1,17 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
     margin: 0;
     background-image: url("../images/Sea1.jpg");
-}
+  
+  }
 
   .container-fluid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-family: Arial, sans-serif !important;
+    /* width: calc(100% - 16px);*/
 
   }
   .row {
@@ -20,6 +27,8 @@ body {
   }
 
   .Logo a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     text-decoration: none!important;
     font-family: 'Pacifico', cursive!important;
@@ -32,10 +41,12 @@ body {
   }
   
   .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     bottom: -7em;
-    right: 0;
+    right: 0em;
     width: 35%;
   
   }
@@ -48,7 +59,8 @@ body {
     width: 24px;
     height: 24px;
     padding: 0;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     line-height: 1em;
   }
@@ -78,7 +90,7 @@ body {
     text-align: end;
     width: calc(50% - 16px);
     position: absolute;
-    right: 1em;
+    right: 2em;
     color: gold;
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7);
     cursor: pointer;
@@ -110,17 +122,25 @@ body {
   .container-fluid>.row:nth-child(6) {
        background-color: whitesmoke;
   }
+  .container-fluid>.row:nth-child(6) {
+      max-height: 230px;
+  }
   h3 {
       color: rgb(19, 19, 139);
   }
-  p {
+  .strah {
       text-align: justify;
   }
   h5, h3 {
       font-weight: bold!important;
       text-align: center;
   }
+  .container-fluid>.row:nth-child(7) {
+      background-color: whitesmoke;
+      min-height: 2em;
+  }
   .open-button {
+    position: relative;
     background-color: #2196F3;
     color: white;
     font-size: 15px;
@@ -129,9 +149,21 @@ body {
     border: none;
     cursor: pointer;
     opacity: 0.8;
-    width: 70%;
+    width: 50%;
     margin: 6em auto;
+    animation: box 1.5s ease-in-out infinite;
+    -webkit-animation: box 1.5s ease-in-out infinite;
   }
+   @-webkit-keyframes box {
+  0% { width: 50%; padding: 16px 20px; background: #2196F3;}
+  50% {width: 60%; padding: 20px 24px; background: blue;}
+  100%  { width: 50%; padding: 16px 20px; background: #2196F3; }
+ }
+   @keyframes box {
+  0% { width: 50%; padding: 16px 20px; background: #2196F3;}
+  50% {width: 60%; padding: 20px 24px; background: blue;}
+  100%  { width: 50%; padding: 16px 20px; background: #2196F3; }
+ }
 
   .form-popup {
     display: none;
@@ -192,6 +224,8 @@ body {
     margin: 0;
   }
   .socialsF {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     position: relative;
@@ -204,7 +238,8 @@ body {
     width: 24px;
     height: 24px;
     padding: 0;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     line-height: 20px;
   }
@@ -213,14 +248,14 @@ body {
   }
   .container-fluid>.row:last-child p {
     color: white;
-    line-height: 1em;
+    line-height: 1.5em;
     font-weight: middle;
     font-size: 1em;
   }
-  .container-fluid>.row:nth-child(7) {
+  .container-fluid>.row:nth-child(8) {
     min-height: 2em;
   }
- 
+  
   .container-fluid>.row:nth-child(6) p {
     margin: 3em auto 0;
     color: rgb(19, 19, 139);
@@ -235,22 +270,3 @@ body {
   .container-fluid>.row:nth-child(6) p:first-child {
     font-weight: bold;
   }
-  .navbar {
-  width: calc(100 - 16px);
-  background: gold;
-  font-weight: bold;
-}
-.navbar-container, .bg-light {
-  background: gold!important;
-  padding: 0!important;
-  width: 100%;
-
-}
-.dropdown-menu {
-background-color: gold!important;
-}
-.navbar-brand,  .nav-link, .dropdown-item {
-color: rgb(19, 19, 139)!important;
-font-family: Arial, sans-serif !important;
-}
- 

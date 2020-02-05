@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
     margin: 0;
     background-image: url("../images/Sea1.jpg");
@@ -10,7 +12,9 @@ body {
   .container-fluid {
     max-width: 1200px;
     margin: auto;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
   }
   .row {
@@ -26,6 +30,8 @@ body {
   }
 
   .Logo a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     text-decoration: none!important;
     font-family: 'Pacifico', cursive!important;
@@ -38,6 +44,8 @@ body {
   }
   
   .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     bottom: -7em;
@@ -54,7 +62,8 @@ body {
     width: 24px;
     height: 24px;
     padding: 0;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     line-height: 1em;
   }
@@ -120,9 +129,13 @@ body {
   .container-fluid>.row:nth-child(4) p:first-child {
     font-weight: bold;
   }
+  .container-fluid>.row:nth-child(4) {
+      max-height: 230px;
+  }
   .vvod {
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .container-fluid>.row:nth-child(3), 
   .container-fluid>.row:nth-child(4), h3 {
@@ -131,6 +144,7 @@ body {
   }
 
   .open-button {
+    position: relative;
     background-color: #2196F3;
     color: white;
     font-size: 15px;
@@ -139,9 +153,21 @@ body {
     border: none;
     cursor: pointer;
     opacity: 0.8;
-    width: 70%;
+    width: 50%;
     margin: 6em auto;
+    animation: box 1.5s ease-in-out infinite;
+    -webkit-animation: box 1.5s ease-in-out infinite;
   }
+   @-webkit-keyframes box {
+  0% { width: 50%; padding: 16px 20px; background: #2196F3;}
+  50% {width: 60%; padding: 20px 24px; background: blue;}
+  100%  { width: 50%; padding: 16px 20px; background: #2196F3; }
+ }
+   @keyframes box {
+  0% { width: 50%; padding: 16px 20px; background: #2196F3;}
+  50% {width: 60%; padding: 20px 24px; background: blue;}
+  100%  { width: 50%; padding: 16px 20px; background: #2196F3; }
+ }
 
   .form-popup {
     display: none;
@@ -202,6 +228,8 @@ body {
     margin: 0;
   }
   .socialsF {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     position: relative;
@@ -214,7 +242,8 @@ body {
     width: 24px;
     height: 24px;
     padding: 0;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     line-height: 20px;
   }
@@ -223,7 +252,7 @@ body {
   }
   .container-fluid>.row:last-child p {
     color: white;
-    line-height: 1em;
+    line-height: 1.5em;
     font-weight: middle;
     font-size: 1em;
   }
