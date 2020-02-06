@@ -90,6 +90,7 @@ body {
 
   .contacts {
     display: block;
+    top: 1em;
     text-align: end;
     width: calc(50% - 16px);
     position: absolute;
@@ -101,6 +102,9 @@ body {
     font-weight: bold;
     font-size: 1.1em;
     text-decoration: none!important;
+  }
+  .contacts p {
+      line-height: 0;
   }
 
   .contacts a {
@@ -267,7 +271,9 @@ body {
     text-align: justify;
    /* background: rgb(237, 241, 192);*/
   }
-  
+   p {
+    font-size: 1.1em!important;
+  }
   h3 {
     color: rgb(19, 19, 139);
     font-weight: bold!important;

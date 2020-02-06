@@ -35,7 +35,7 @@ body {
     display: flex;
     position: relative;
     left: 5%;
-    width: 50%;
+    width: 200px;
     margin: 3em auto 0;
   }
   
@@ -75,27 +75,45 @@ body {
   
   
    .contacts {
+    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     text-align: center;
-    width: calc(40% - 16px);
-    margin: 4em auto 4em;
+    width: 10em;
+    margin: 4em auto;
     color: gold;
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7);
     cursor: pointer;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1.1em;
     text-decoration: none!important;
   }
-  
+  .contacts p {
+      display: none;
+  }
   .contacts a {
+      display: flex;
+      width: 100%;
+
     text-decoration: none!important;
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7) !important;
     font-family: Arial, sans-serif !important;
     font-weight: bold !important;
     color: inherit;
+  }
+  .navbar-brand {
+      font-size: 1.1em!important;
+      margin-left: -1.4em!important;
+  }
+ 
+  .navbar-toggler {
+      margin-right: -1.3em!important;
+  }
+  .card {
+    width: 90%!important;
+    margin: auto;
   }
   
 .navbar {
@@ -140,7 +158,7 @@ body {
     min-height: 2em;
   }
   .aftervvod {
-      height: 3.5em;
+      height: 4em;
       background: whitesmoke;
   }
   .no-gutters {
@@ -167,27 +185,23 @@ body {
     position: relative;
     background-color: #2196F3;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
-    padding: 16px 20px;
+    padding: 14px 18px;
     border: none;
     cursor: pointer;
     opacity: 0.8;
-    width: 60%;
+    width: 80%;
     margin: 3em auto;
     animation: box 1.5s ease-in-out infinite;
     -webkit-animation: box 1.5s ease-in-out infinite;
   }
   @-webkit-keyframes box {
-  0% { width: 60%; padding: 16px 20px; background: #2196F3;}
-  50% {width: 70%; padding: 20px 24px; background: blue;}
-  100%  { width: 60%; padding: 16px 20px; background: #2196F3; }
+  0% { width: 80%; padding: 14px 18px; background: #2196F3;}
+  50% {width: 90%; padding: 14px 18px; background: blue;}
+  100%  { width: 80%; padding: 14px 18px; background: #2196F3; }
  }
-  @keyframes box {
-  0% { width: 60%; padding: 16px 20px; background: #2196F3;}
-  50% {width: 70%; padding: 20px 24px; background: blue;}
-  100%  { width: 60%; padding: 16px 20px; background: #2196F3; }
- }
+ 
 
   .form-popup {
     display: none;
@@ -309,9 +323,9 @@ opacity: 1!important;
 .card-title {
     font-size: 1.2em!important;
 }
-.card {
-    width: 70%!important;
-    /*min-height: 38em!important;*/
+.card-text {
+    font-size: 1.1em!important;
+    font-family: Arial, sans-serif !important;
 }
 
   

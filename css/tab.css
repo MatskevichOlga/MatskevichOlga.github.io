@@ -89,6 +89,9 @@ body {
   font-size: 1.1em;
   text-decoration: none!important;
 }
+  .contacts p {
+      line-height: 0;
+  }
 
 .contacts a {
   text-decoration: none!important;
@@ -96,6 +99,11 @@ body {
   font-family: Arial, sans-serif !important;
   font-weight: bold !important;
   color: inherit;
+}
+
+.card {
+  margin: auto;
+ /* width: 90%!important;*/
 }
 
 .navbar {
@@ -161,9 +169,7 @@ body {
       margin-bottom: 2em;
   }
 
-.card {
-  margin: auto;
-}
+
 .aftervvod {
 height: 3em;
 background: whitesmoke;
@@ -342,4 +348,8 @@ font-weight: bold;
  }
  .news a {
   text-decoration: none!important
+}
+.news1 a, .news2 a {
+    text-decoration: none!important;
+    color: black!important;
 }

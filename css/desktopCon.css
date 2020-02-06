@@ -77,6 +77,7 @@ body {
 
   .contacts {
     display: block;
+    top: 1em;
     text-align: end;
     width: calc(50% - 16px);
     position: absolute;
@@ -269,6 +270,9 @@ p a {
   .form-container .btn:hover,
   .open-button:hover {
     opacity: 1;
+  }
+  .contacts p {
+      line-height: 0;
   }
 
   

@@ -93,8 +93,11 @@ body {
   cursor: pointer;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.1em;
   text-decoration: none!important;
+}
+.contacts p {
+    line-height: 0;
 }
 
   .contacts a {
@@ -121,7 +124,7 @@ body {
   }
   .strah {
       text-align: justify;
-      font-size: 0.9em;
+      font-size: 1em;
   }
   h5, h3 {
       font-weight: bold!important;
@@ -132,7 +135,7 @@ body {
   }
   .container-fluid>.row:nth-child(7) {
       background-color: whitesmoke;
-      min-height: 4em;
+      min-height: 5.5em;
   }
  .open-button {
     position: relative;

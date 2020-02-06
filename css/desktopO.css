@@ -78,6 +78,7 @@ body {
 
 .contacts {
   display: block;
+  top: 1em;
   text-align: end;
   width: calc(50% - 16px);
   position: absolute;
@@ -89,6 +90,9 @@ body {
   font-weight: bold;
   font-size: 1.1em;
   text-decoration: none!important;
+}
+.contacts p {
+    line-height: 0;
 }
 
 .contacts a {
@@ -262,6 +266,9 @@ h3 {
   text-align: center;
   
 }
+ p {
+    font-size: 1.1em!important;
+  }
 .navbar {
   width: calc(100 - 16px);
   background: gold;

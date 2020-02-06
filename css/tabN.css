@@ -94,6 +94,9 @@ body {
   font-size: 1.1em;
   text-decoration: none!important;
 }
+.contacts p {
+    line-height: 0;
+}
 
   .contacts a {
     text-decoration: none!important;

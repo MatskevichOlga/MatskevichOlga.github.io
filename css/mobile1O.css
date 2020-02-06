@@ -89,6 +89,9 @@ body {
   font-size: 1.1em;
   text-decoration: none!important;
 }
+.contacts p {
+    line-height: 0;
+}
 
 .contacts a {
   text-decoration: none!important;
@@ -129,10 +132,10 @@ body {
   
   .container-fluid>.row:nth-child(5) {
       background-color: whitesmoke;
-      min-height: 3em;
+      min-height: 4em;
   }
   .container-fluid>.row:nth-child(4) {
-      max-height: 270px;
+      max-height: 260px;
   }
   .container-fluid>.row:nth-child(6) {
   min-height: 2em;
@@ -270,10 +273,10 @@ body {
     
   }
   h4 {
-    font-size: 1.1em!important;
+    font-size: 1.2em!important;
   }
   p {
-    font-size: 0.9em!important;
+    font-size: 1.1em!important;
   }
   .navbar {
     width: calc(100 - 16px);

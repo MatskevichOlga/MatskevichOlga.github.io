@@ -94,6 +94,7 @@ body {
     text-align: end;
     width: calc(50% - 16px);
     position: absolute;
+    top: 1em;
     right: 2em;
     color: gold;
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7);
@@ -110,6 +111,10 @@ body {
     font-family: Arial, sans-serif !important;
     font-weight: bold !important;
     color: inherit;
+    line-height: 0.2em;
+  }
+  .contacts p {
+      line-height: 0;
   }
 
   .navbar {
@@ -330,6 +335,10 @@ body {
  }
  .news a {
   text-decoration: none!important
+}
+.news1 a, .news2 a {
+    text-decoration: none!important;
+    color: black!important;
 }
 
   

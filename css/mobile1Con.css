@@ -188,7 +188,7 @@ p a {
       max-height: 230px;
   }
   .aftervvod {
-      min-height: 1em;
+      min-height: 2em;
       background: whitesmoke;
   }
  .open-button {
@@ -301,3 +301,14 @@ font-weight: bold;
     /*background: rgb(228, 198, 32);*/
     opacity: 1!important;
 }
+.contacts p {
+    line-height: 0;
+}
+.container-fluid>.row:nth-child(3) h4,
+ .container-fluid>.row:nth-child(4) h4 {
+     font-size: 1.3em!important;
+ }
+ .container-fluid>.row:nth-child(3) p,
+ .container-fluid>.row:nth-child(4) p {
+     font-size: 1em!important;
+ }

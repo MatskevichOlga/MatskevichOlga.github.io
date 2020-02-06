@@ -86,7 +86,7 @@ body {
   cursor: pointer;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.1em;
   text-decoration: none!important;
 }
 
@@ -97,11 +97,18 @@ body {
   font-weight: middle;
   color: inherit;
 }
+.contacts p {
+    line-height: 0.2em;
+}
 
 .navbar {
   width: 100%;
   background: gold;
 
+}
+.card {
+    width: 95%!important;
+    margin: auto;
 }
 .col-sm-10.slider {
   margin: 2em 0;
@@ -155,16 +162,12 @@ body {
 }
 .container-fluid>.row:nth-child(7) {
   
-      max-height: 270px;
+      max-height: 250px;
   }
 .aftervvod {
-height: 3em;
+height: 4em;
 background: whitesmoke;
 
-}
-
-.card {
-  margin: auto;
 }
 
 .vvod {
@@ -298,9 +301,7 @@ background: whitesmoke;
 .row>.card:nth-child(3), .row>.card:nth-child(5) {
   display: none;
 }
-.card {
-  width: 70%!important;
-}
+
 .navbar-container, .bg-light {
   background: gold!important;
   padding: 0!important;
