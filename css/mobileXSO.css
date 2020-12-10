@@ -1,4 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 body {
     margin: 0;
@@ -165,20 +164,26 @@ body {
   /* border-radius: 8px;*/
     opacity: 0.8;
     width: 80%;
+    height:60px;
+    border-radius: 10px;
     margin: 2em auto 3em;
     animation: box 1.5s ease-in-out infinite;
     -webkit-animation: box 1.5s ease-in-out infinite;
   }
   @-webkit-keyframes box {
-  0% { width: 80%; padding: 14px 18px; background: #2196F3;}
-  50% {width: 90%; padding: 18px 22px; background: blue;}
-  100%  { width: 80%; padding: 14px 28px; background: #2196F3; }
- }
- @keyframes box {
-  0% { width: 80%; padding: 14px 18px; background: #2196F3;}
-  50% {width: 90%; padding: 18px 22px; background: blue;}
-  100%  { width: 80%; padding: 14px 28px; background: #2196F3; }
- }
+    0% { width: 80%; background: #2196F3;}
+    50% {width: 90%; background: blue;}
+    100%  { width: 80%; background: #2196F3; }
+   }
+   @keyframes box {
+    0% { width: 80%;background: #2196F3;}
+    50% {width: 90%; background: blue;}
+    100%  { width: 80%;background: #2196F3; }
+   }
+   .open-button:hover{
+    color: gold;
+  }
+  
  
 
   .form-popup {

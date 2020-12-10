@@ -176,22 +176,26 @@ body {
     border: none;
     cursor: pointer;
     opacity: 0.8;
-    width: 60%;
+    width: 70%;
+    height:60px;
+    border-radius: 10px;
     margin: 6em auto;
     animation: box 1.5s ease-in-out infinite;
     -webkit-animation: box 1.5s ease-in-out infinite;
   }
   @-webkit-keyframes box {
-  0% { width: 60%; padding: 16px 20px; background: #2196F3;}
-  50% {width: 70%; padding: 20px 24px; background: blue;}
-  100%  { width: 60%; padding: 16px 20px; background: #2196F3; }
- }
-  @keyframes box {
-  0% { width: 60%; padding: 16px 20px; background: #2196F3;}
-  50% {width: 70%; padding: 20px 24px; background: blue;}
-  100%  { width: 60%; padding: 16px 20px; background: #2196F3; }
- }
-
+    0% { width: 70%;  background: #2196F3;}
+    50% {width: 80%; background: blue;}
+    100%  { width: 70%; background: #2196F3; }
+   }
+    @keyframes box {
+    0% { width: 70%;  background: #2196F3;}
+    50% {width: 80%; background: blue;}
+    100%  { width: 70%; background: #2196F3; }
+   }
+   .open-button:hover{
+    color: gold;
+  }
   .form-popup {
     display: none;
     position: fixed;
