@@ -208,7 +208,7 @@ body {
   50% {width: 60%; background: blue;}
   100%  { width: 50%; background: #2196F3; }
  }
- open-button:hover{
+ .open-button:hover{
   color: gold;
 }
   .form-popup {
