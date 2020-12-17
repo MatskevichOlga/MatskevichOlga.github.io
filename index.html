@@ -305,7 +305,7 @@
           <button class="open-button" onclick="openForm()">ОТПРАВИТЬ ЗАЯВКУ</button>
 
           <div class="form-popup" id="myForm">
-            <form action="#" class="form-container">
+            <form action="#" class="form-container" id="form">
               <h2>ЗАЯВКА НА ТУР</h2>
 
               <label for="name"><b>Имя</b></label>
@@ -375,6 +375,24 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
     <script src="js/script1.js"></script>
+    <script>
+      $(document).ready(function() {
+
+$("#form").submit(function() {
+  $.ajax({
+    type: "POST",
+    url: "mail.php",
+    data: $(this).serialize()
+  }).done(function() {
+    $(this).find("input").val("");
+    alert("Спасибо за сообщение! Скоро я с вами свяжусь.");
+    $("#form").trigger("reset");
+  });
+  return false;
+});
+
+});
+    </script>
  
 </body>
 
