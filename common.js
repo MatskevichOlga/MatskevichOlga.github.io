@@ -6,7 +6,6 @@ $(document).ready(function() {
 			url: "mail.php",
 			data: $(this).serialize()
 		}).done(function() {
-			$(this).find("input").val("");
 			alert("Спасибо за сообщение! Скоро я с вами свяжусь.");
 			$("#form").trigger("reset");
 		});
