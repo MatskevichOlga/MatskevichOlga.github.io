@@ -319,7 +319,7 @@
               <input type="text" placeholder="Ваш комментарий" name="comment" required>
 
               <button type="submit" class="btn vvod" onclick="vvodForm()">Отправить</button>
-             <!-- <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>-->
+             <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
             </form>
           </div>
 
@@ -385,7 +385,7 @@ $("#form").submit(function() {
     url: "mail.php",
     data: $(this).serialize()
   }).done(function() {
-  
+    $(this).find("input").val("");
     alert("Спасибо за сообщение! Скоро я с вами свяжусь.");
     $("#form").trigger("reset");
   });
